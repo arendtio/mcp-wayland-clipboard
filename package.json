@@ -1,0 +1,33 @@
+{
+  "name": "mcp-wayland-clipboard",
+  "version": "1.0.0",
+  "description": "MCP server to write to the clipboard via wl-copy",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-wayland-clipboard": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "clipboard",
+    "wayland",
+    "wl-copy"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "which": "^5.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/which": "^3.0.4",
+    "typescript": "^5.3.0"
+  }
+}
